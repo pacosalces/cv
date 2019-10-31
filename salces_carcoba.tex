@@ -22,7 +22,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
-
+\usepackage{bibentry}
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
@@ -125,4 +125,14 @@ Soft X-ray calorimetry from ion electronic recapture, ORNL, TN.
 \end{itemize} 
 
 \end{resume}
+
+\bibliographystyle{unsrt} 
+\nobibliography{publication_list}
+
+\section{Publications}
+\begin{enumerate}
+    \item \bibentry{Salces2018}
+    \item \bibentry{Sugawa2018}
+\end{enumerate}
+
 \end{document}
