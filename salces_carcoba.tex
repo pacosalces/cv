@@ -21,8 +21,10 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
-\usepackage{bibentry}
+\documentclass[margin]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage[backend=biber, maxbibnames=99, sorting=ydnt, doi=false, isbn=false]{biblatex}
+\addbibresource{bibliography.bib}
+
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
@@ -45,7 +47,7 @@
 % \moveleft.5\hoffset\centerline{www.pacosalces.com} Unpublished
 
 %----------------------------------------------------------------------------------------
-
+\nocite{*}
 \begin{resume}
 
 %----------------------------------------------------------------------------------------
@@ -122,17 +124,12 @@ Soft X-ray calorimetry from ion electronic recapture, ORNL, TN.
 \begin{itemize} \itemsep -2pt
 \item Operated the ${{\rm keV}}$ molecular ion beam accelerator for data acquisition.
 \item Operated high resolution X-ray cryogenic (${0.1 {\rm K}}$) calorimeter.
-\end{itemize} 
+\end{itemize}
 
 \end{resume}
-
-\bibliographystyle{unsrt} 
-\nobibliography{publication_list}
-
-\section{Publications}
-\begin{enumerate}
-    \item \bibentry{Salces2018}
-    \item \bibentry{Sugawa2018}
-\end{enumerate}
+\section{PUBLICATIONS}
+% we need heading=bibnumbered here to tell biblatex to use \section 
+% not \section* (which will produce a spurious * with this class)
+\printbibliography[heading=none]
 
 \end{document}
