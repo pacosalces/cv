@@ -17,89 +17,71 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass[margin]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
-\usepackage[backend=biber, maxbibnames=99, sorting=ydnt, doi=false, isbn=false]{biblatex}
+\usepackage[sorting=ydnt, doi=false, maxbibnames=99, isbn=false, backend=bibtex]{biblatex}
 \addbibresource{bibliography.bib}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks = true,
-    linkcolor = {red},
+    linkcolor = {blue},
 }
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
 \setlength{\textwidth}{5.1in} % Text width of the document
-
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
-%----------------------------------------------------------------------------------------
 
 \moveleft.5\hoffset\centerline{\large\bf Francisco Salces-C\'arcoba}
-\moveleft.5\hoffset\centerline{Country of citizenship: Mexico} 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-
+\moveleft.5\hoffset\centerline{\it Barish--Weiss Postdoctoral Scholar} 
+\moveleft.5\hoffset\centerline{\vbox{\hrule width 0.5\resumewidth height 1pt}}\smallskip
 \moveleft.5\hoffset\centerline{540 S Madison Ave Apt.2} 
 \moveleft.5\hoffset\centerline{Pasadena, CA 91101}
 \moveleft.5\hoffset\centerline{+1 (301) 222-3170}
 \moveleft.5\hoffset\centerline{pacosalces@gmail.com}
 \moveleft.5\hoffset\centerline{www.pacosalces.com}
-
 %----------------------------------------------------------------------------------------
-\nocite{*}
 \begin{resume}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
 
 \section{EDUCATION}
 
 {\bf PhD,} Physics \\
 Universiy of Maryland College Park, College Park, MD, May 2020 \\
-Dissertation topic: Quantum simulation with ultracold bosonic gases\\
 Title of dissertation: {\it Microscopy of elongated superfluids}
 
 {\bf BSc,} Physics \\
 Universidad Aut\'onoma de San Luis Potos\'i, San Luis Potos\'i, S.L.P., Mexico, 2013
  
-%----------------------------------------------------------------------------------------
-% SKILLS AND EXPERTISE SECTION
-%----------------------------------------------------------------------------------------
-
 \section{SKILLS AND EXPERTISE}
 
 {\bf General:}
-Experimental atomic, molecular, quantum and optical physics.\\
+Experimental physics; gravitational wave detection, atomic, molecular, optical physics, quantum mechanics.
+
 {\bf Hardware:}
-Optical design in the VIS, NIR bands, high and ultra-high vacuum techniques to ${10^{-12} {\rm mbar}}$, miscellaneous electronic applications ranging DC to ${100 \, {\rm MHz}}$, and microwave sources at$~6.8\,{\rm GHz}$.\\
-{\bf Software:}
-Solidworks, Zeemax, Eagle, Python, \LaTeX, Labview, Matlab, VHDL. Personal public repositories at https://github.com/pacosalces
+{\underline{Optics};} passive and active optical design from 400 to 2300 nm, laser spectroscopy, adaptive optics, holography, coherent microscopy, optical cavities, and laser systems. {\underline{Vacuum};} high and ultra-high vacuum down to ${10^{-12} {\rm mbar}}$. {\underline {Electronics};} basic DC and AC applications into the radiofrecuency and microwave domain at $~10\,{\rm GHz}$. {\underline{Mechanics};} basic machining and assembly of components and structures.
 
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
- 
-\section{RESEARCH TRACK}
+{\bf Software:} 
+{\underline{Numerical analysis \& hardware interfaces};} Python, Matlab, ImageJ, Labview, VHDL, bash, hpc. {\underline{CAD};} Solidworks, Zeemax, Eagle. {\underline{Other};} \LaTeX. 
 
-{\sl Barish-Weiss Postdoctoral Scholar} \hfill 2020-present \\
-{\bf Prototype of a cryogenic gravitational wave detector}\\
+Personal repositories; https://github.com/pacosalces
+
+\section{RESEARCH TASKS}
+
+{\sl Barish-Weiss Postdoctoral Fellow} \hfill 2020-present \\
+{\bf Mariner: 40m prototype of a cryogenic gravitational wave detector}\\
 {\it California Institute of Technology, Pasadena, CA}
 \begin{itemize} \itemsep -2pt
-\item Develop $2\,{\rm \mu m}$ sources for next-generation gravitational wave detectors.
+\item $2.1\,{\rm \mu m}$ lasers for next-generation cryogenic gravitational wave interferometry.
+\item $1.4\,{\rm \mu m}$ lasers for next-generation cryogenic gravitational wave detector arm-length stabilization.
+\item Strain calibration for optimal gravitational wave detector parameter estimation.
 \end{itemize} 
 
 {\sl Graduate research assistant} \hfill 2017-2020 \\
 {\bf Holographic microscopy of ultracold ${\bf ^{87} {\rm \bf Rb}}$}\\
 {\it Joint Quantum Institute (University of Maryland and NIST), Gaithersburg, MD}
 \begin{itemize} \itemsep -2pt
-\item Implement off-axis holographic microscope for ${^{87} {\rm Rb}}$ gases.
-\item Measure and digitally filter aberrations using atomic shot noise.
+\item Off-axis digital holographic microscope for ${^{87} {\rm Rb}}$ gases.
+\item Digital aberrations correction using holography and atom shot noise.
 \end{itemize} 
 
 {\sl Graduate research assistant} \hfill 2016-2018 \\
@@ -107,8 +89,8 @@ Solidworks, Zeemax, Eagle, Python, \LaTeX, Labview, Matlab, VHDL. Personal publi
 {\it Joint Quantum Institute (University of Maryland and NIST), Gaithersburg, MD}
 \begin{itemize} \itemsep -2pt
 \item Design and assembly of ultra-high vacuum manifolds.
-\item Design of magnetic quadrupole cold atom transport.
-\item Design mounting structure and layout for the apparatus.
+\item Design of magnetic quadrupole based cold atom transport.
+\item Design mounting structure and general layout for the apparatus.
 \end{itemize}
 
 {\sl Graduate research assistant} \hfill 2015-2017 \\
@@ -138,7 +120,7 @@ Solidworks, Zeemax, Eagle, Python, \LaTeX, Labview, Matlab, VHDL. Personal publi
 \end{itemize}
  
 {\sl Undergraduate research intern} \hfill Summer 2012 \\
-{\bf Soft X-ray calorimetry from ion electronic recapture}\\
+{\bf Soft X-ray calorimetry from electron recapture}\\
 {\it Oak Ridge National Lab, Oak Ridge, TN}
 \begin{itemize} \itemsep -2pt
 \item Operate ${{\rm keV}}$ molecular ion beam accelerator.
@@ -153,9 +135,25 @@ Solidworks, Zeemax, Eagle, Python, \LaTeX, Labview, Matlab, VHDL. Personal publi
 \end{itemize}
  
 \end{resume}
-\section{PUBLICATIONS}
-% we need heading=bibnumbered here to tell biblatex to use \section 
-% not \section* (which will produce a spurious * with this class)
-\printbibliography[heading=none]
+
+\section{PEER-REVIEWED PUBLICATIONS}
+
+\nocite{*}
+
+\printbibliography[heading=none, keyword={peer}]
+
+\section{OTHER PUBLICATIONS}
+
+\nocite{*}
+
+\printbibliography[heading=none, keyword={npeer}]
+
+\section{AFFILIATIONS}
+ 
+\begin{itemize}
+    \item{American Physical Society (2016 -- present)}
+    \item{Optical Society of America (2020 -- present)}
+\end{itemize}
+
 
 \end{document}
