@@ -1,5 +1,4 @@
-# cv
-Personal CV
+# Curriculum (i.e. Personal CV)
 
 Simply clone and build using pdftex. Requires res.cls file.
 
